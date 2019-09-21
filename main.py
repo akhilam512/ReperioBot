@@ -6,7 +6,7 @@ import mysql.connector
 from mysql.connector import MySQLConnection, Error
 
 
-TOKEN = "913721237:AAEuGNRDAnDfiwT74qoknJ3qCGHjbTmHrV0"
+TOKEN = "TOKEN HERE"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     	# get all counsellors and iterate in the list of counsellors and call schedule(counsellor_name)
 
     #else if entity == "subject":
-    	# ask which subject
+    	# ask 	which subject
 
     	# list all subject teachers
 
