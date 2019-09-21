@@ -7,8 +7,8 @@ def connect():
     try:
         conn = mysql.connector.connect(host='localhost',
                                        database='python_mysql',
-                                       user='puneethchanda',
-                                       password='Jyothiraj_112')
+                                       user='akshayhari',
+                                       password='random1234')
         if conn.is_connected():
             print('Connected to MySQL database')
  
