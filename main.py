@@ -6,7 +6,7 @@ import mysql.connector
 from mysql.connector import MySQLConnection, Error
 
 
-TOKEN = "TOKEN HERE"
+TOKEN = "913721237:AAEuGNRDAnDfiwT74qoknJ3qCGHjbTmHrV0"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
@@ -67,6 +67,10 @@ if __name__ == '__main__':
 
     for i in range(no_subscribers(get_updates())):
         user_ids.append(get_chat_id(get_updates(),i))
+
+    send_message("Which class are you from? (CSEA, CSEB, ECEA)", user_ids[0])
+
+
 
     for i in range(no_subscribers(get_updates())):
         for j in range(len(final_data)):
